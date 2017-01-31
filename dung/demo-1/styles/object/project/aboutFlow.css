@@ -1,0 +1,33 @@
+.flow {
+  margin-top: 30px;
+  text-align: left;
+  overflow: hidden; }
+
+.flow h3 {
+  padding-bottom: 10px;
+  border-bottom: 3px solid #83ccd2; }
+
+.flow ul {
+  margin-top: 30px; }
+
+.flow ul li {
+  margin-top: 30px;
+  padding-bottom: 10px;
+  display: block;
+  clear: both;
+  border-bottom: 1px dotted grey;
+  overflow: hidden; }
+
+.flow ul li:last-child {
+  border-bottom: none; }
+
+.flow ul li p {
+  width: 850px;
+  text-align: left;
+  float: right; }
+
+.flow img {
+  width: 130px;
+  float: left; }
+
+/*# sourceMappingURL=aboutFlow.css.map */

@@ -1,0 +1,24 @@
+.definition {
+  margin-top: 30px;
+  text-align: center; }
+
+.definition h3 {
+  text-align: left;
+  padding-bottom: 10px;
+  border-bottom: 3px solid #83ccd2; }
+
+.definition ul {
+  margin-top: 30px; }
+
+.definition ul li {
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  display: inline-block; }
+
+.definition ul li p {
+  margin-top: 30px;
+  margin-bottom: 30px; }
+
+/*# sourceMappingURL=aboutBraineer.css.map */

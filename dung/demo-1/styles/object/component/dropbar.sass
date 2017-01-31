@@ -1,0 +1,22 @@
+.c-dropbar
+
+    &--down
+        position: relative
+        display: inline-block
+        &:hover &__content
+            display: block
+            height: 200px
+            overflow: scroll
+            z-index: 10
+
+            &__button
+
+    &--down__content
+        display: none
+        position: absolute
+        background-color: #f9f9f9
+        li
+            color: black
+            padding: 12px 16px
+            display: block
+            z-index: 100

@@ -1,0 +1,53 @@
+.c-panel {
+  border: 1px solid #dedede;
+  margin: 5px;
+  box-sizing: border-box;
+  overflow: hidden; }
+  .c-panel ul li {
+    padding-bottom: 2px; }
+  .c-panel__head {
+    height: 150px;
+    position: relative; }
+  .c-panel__head__companyName {
+    position: absolute;
+    top: 100px;
+    left: 15px; }
+  .c-panel__head__companyName__logo {
+    width: 28px;
+    float: left; }
+    .c-panel__head__companyName__logo img {
+      border-radius: 50%;
+      width: 100%; }
+  .c-panel__head__companyName__name {
+    color: white;
+    text-shadow: 1px 1px 3px #000;
+    line-height: 1.3; }
+  .c-panel__head__imageBox {
+    height: 100%;
+    width: 100%; }
+  .c-panel__head__imageBox__image {
+    width: 100%;
+    height: 100%; }
+  .c-panel__body {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    width: 100%; }
+  .c-panel__body__title {
+    margin-top: 10px;
+    padding-bottom: 10px; }
+  .c-panel__body__favorite {
+    margin-top: 10px;
+    overflow: hidden; }
+  .c-panel__body__favorite__favorite {
+    float: left; }
+  .c-panel__body__favorite__view {
+    float: right; }
+
+.c-panel--small {
+  width: 220px; }
+
+.c-panel--medium {
+  width: 330px; }
+
+/*# sourceMappingURL=panel.css.map */

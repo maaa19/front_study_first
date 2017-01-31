@@ -1,0 +1,36 @@
+header {
+  color: #fff;
+  font-size: 16px;
+  margin-bottom: 0px; }
+  header a {
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none; }
+
+.homepage__header {
+  position: relative; }
+
+.header__menu {
+  float: right; }
+  .header__menu ul li {
+    padding-left: 20px;
+    display: inline-block; }
+  .header__menu li:nth-child(6) {
+    padding-right: 5px;
+    padding-left: 5px; }
+  .header__menu li:nth-child(7) {
+    padding-left: 5px; }
+
+.topHeader {
+  min-width: 980px; }
+
+.topTitle {
+  color: white;
+  position: relative;
+  text-align: center;
+  top: 30%; }
+  .topTitle p {
+    font-size: 120%;
+    text-shadow: 1px 1px 3px #000; }
+
+/*# sourceMappingURL=header.css.map */

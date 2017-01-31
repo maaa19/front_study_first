@@ -1,0 +1,21 @@
+@import "constant"
+
+@mixin media ($media-breakpoint)
+
+	@if $media-breakpoint == 	desktop
+		@media screen and (min-width: $desktop-width)
+			@content
+
+	@else if $media-breakpoint == tablet
+		@media screen and (min-width: $tablet-width)
+			@content
+
+@mixin prefix ($property, $value)
+	@each $prefix in $prefix-list
+		#{$prefix}#{$property}: #{$value}
+
+
+
+
+
+

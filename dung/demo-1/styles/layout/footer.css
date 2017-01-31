@@ -1,0 +1,32 @@
+footer {
+  font-size: 0.8em;
+  color: #ffffff;
+  margin-top: 30px;
+  padding-bottom: 30px; }
+  footer img {
+    float: left;
+    width: 180px; }
+  footer ul {
+    width: 25%;
+    margin-bottom: 30px;
+    padding: 0;
+    float: left;
+    text-align: left;
+    vertical-align: top; }
+  footer li {
+    padding-bottom: 5px; }
+  footer a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0; }
+  footer p {
+    padding: 30px; }
+  footer .footer__item {
+    width: 75%;
+    float: right; }
+  footer .footer__contact {
+    width: 50%;
+    margin: auto;
+    padding-bottom: 30px; }
+
+/*# sourceMappingURL=footer.css.map */

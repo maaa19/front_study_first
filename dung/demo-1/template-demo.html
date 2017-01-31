@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>demo</title>
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!--<button>Hello, world!</button>-->
+  <!--<script>-->
+    <!--var host = document.querySelector('button');-->
+    <!--var root = host.createShadowRoot();-->
+    <!--root.textContent = 'こんにちは、影の世界!';-->
+  <!--</script>-->
+
+  <!--<div id="nameTag0">Dung</div>-->
+  <template id="nameTagTemplate">
+    <style>
+    .outer {
+      border: 2px solid brown;
+      border-radius: 1em;
+      background: red;
+      font-size: 20pt;
+      width: 12em;
+      height: 7em;
+      text-align: center;
+    }
+    .boilerplate {
+      color: white;
+      font-family: sans-serif;
+      padding: 0.5em;
+    }
+    .name {
+      color: black;
+      background: white;
+      font-family: "Marker Felt", cursive;
+      font-size: 45pt;
+      padding-top: 0.2em;
+    }
+  </style>
+    <div style="background: purple; padding: 1em;">
+      <!--which have first class-->
+      <div style="color: red;">
+        <content select=".first"></content>
+      </div>
+      <!--上記の例では、<div class="email"> は div セレクターにも .email セレクターにも一致します。
+        しかし、div セレクターの content 要素が先に来てしまい、
+        <div class="email"> は黄色パーティーに参加するため、青色パーティーには誰も来ません-->
+      <!--which have email class -->
+      <div style="color: blue;">
+        <content select=".email"></content>
+      </div>
+      <!--which is div tag-->
+      <div style="color: yellow;">
+        <content select="div"></content>
+      </div>
+    </div>
+    <!--<br>-->
+    <!--&nbsp;New name:-->
+    <!--<input type="text" id="nameInp" placeholder="Maki">-->
+    <!--<button id="nameBtn" onclick="myFunction">Update</button>-->
+  </template>
+
+  <div id="nameTag">
+    <div class="email">bob@</div>
+    <div class="first">Bob</div>
+    <div class="email">B. Love</div>
+    <div>B. Love</div>
+  </div>
+
+  <script>
+  function myFunction() {
+    var name = $('#nameInp').val();
+    console.log(name+1);
+    $('#nameTag').text(name);
+  }
+  $('#nameBtn').on('click', function(){
+
+  });
+  </script>
+  <script>
+    // document.querySelector('#nameTag').textContent = 'Shellie';
+
+// get template which write in template tag
+      var template = document.querySelector('#nameTagTemplate');
+// push template to DOM
+      var clone = document.importNode(template.content, true);
+// create a shadow root of nameTag for display the template after
+      var shadow = document.querySelector('#nameTag').createShadowRoot();
+// clone a template with nameTag is wrote
+      shadow.appendChild(clone);
+  </script>
+
+</body>
+</html>

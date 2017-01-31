@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAEA,YAAY;EACV,gBAAgB,EAAE,8CAAyC;EAC3D,KAAK,ECJG,OAAO",
+"sources": ["test.sass","../foundation/_constant.sass"],
+"names": [],
+"file": "test.css"
+}

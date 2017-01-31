@@ -1,0 +1,20 @@
+.c-slidebar {
+  overflow: scroll; }
+  .c-slidebar--box {
+    position: relative;
+    width: 3000px; }
+  .c-slidebar--box .c-panel {
+    float: left; }
+  .c-slidebar__nav {
+    width: 200px;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center; }
+    .c-slidebar__nav ul li {
+      display: inline-block; }
+  .c-slidebar__moreButton {
+    width: 33%;
+    margin: 0 auto; }
+
+/*# sourceMappingURL=slidebar.css.map */

@@ -1,0 +1,70 @@
+.c-panel
+    border: 1px solid #dedede
+    margin: 5px
+    box-sizing: border-box
+    overflow: hidden
+
+    ul li
+        padding-bottom: 2px
+
+    &__head
+        height: 150px
+        position: relative
+
+        // ?????????
+
+    &__head__companyName
+        position: absolute
+        top: 100px
+        left: 15px
+
+    &__head__companyName__logo
+        width: 28px
+        float: left
+        img
+            border-radius: 50%
+            width: 100%
+
+    &__head__companyName__name
+        color: white
+        text-shadow: 1px 1px 3px #000
+        line-height: 1.3
+
+    &__head__imageBox
+        height: 100%
+        width: 100%
+
+    &__head__imageBox__image
+        width: 100%
+        height: 100%
+
+    &__body
+        padding:
+            left: 10px
+            right: 10px
+            bottom: 10px
+        width: 100%
+
+
+    &__body__title
+        margin:
+            top: 10px
+        padding:
+            bottom: 10px
+
+    &__body__favorite
+        margin:
+            top: 10px
+        overflow: hidden
+
+    &__body__favorite__favorite
+        float: left
+
+    &__body__favorite__view
+        float: right
+
+.c-panel--small
+    width: 220px
+
+.c-panel--medium
+    width: 330px

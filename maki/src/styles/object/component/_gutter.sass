@@ -1,0 +1,22 @@
+@mixin gutter($direction, $value)
+  @if ($direction == row)
+    padding: 
+      left: $value
+      right: $value
+  @else if ($direction == column)
+    padding: 
+      top: $value
+      bottom: $value
+
+.c-gutter
+  &--rowSmall
+    @include gutter(row, 5px)
+
+  &--rowLarge
+    @include gutter(row, 10px)
+
+  &--columnSmall
+    @include gutter(column, 5px)
+
+  &--columnLarge
+    @include gutter(column, 10px)

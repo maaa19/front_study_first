@@ -1,0 +1,40 @@
+/* @import "foundation/reset.css"
+ * @import "foundation/base.css"
+ * @import "layout/crumb.css"
+ * @import "layout/footer.css"
+ * @import "layout/header.css"
+ * @import "layout/main.css"
+ * @import "object/component/bar.css"
+ * @import "object/component/button.css"
+ * @import "object/component/dropbar.css"
+ * @import "object/component/favorite.css"
+ * @import "object/component/form.css"
+ * @import "object/component/icon.css"
+ * @import "object/component/img.css"
+ * @import "object/component/label.css"
+ * @import "object/component/link.css"
+ * @import "object/component/logo.css"
+ * @import "object/component/panel.css"
+ * @import "object/component/search.css"
+ * @import "object/component/slidebar.css"
+ * @import "object/component/text.css"
+ * @import "object/component/title.css"
+ * @import "object/component/video.css"
+ * @import "object/project/aboutBraineer.css"
+ * @import "object/project/aboutFlow.css"
+ * @import "object/utility/clearfix.css"
+ * @import "object/utility/float.css"
+ * @import "object/utility/margin.css"
+ * @import "object/utility/padding.css" */
+#companyName {
+  background-image: "/bitbucket/images/index_interview_photo2.jpg";
+  color: #83ccd2; }
+
+body {
+  background-color: #83ccd2;
+  background-image: url("/bitbucket/images/index_interview_photo1.jpg"); }
+
+#companyName {
+  color: tomato; }
+
+/*# sourceMappingURL=style.css.map */

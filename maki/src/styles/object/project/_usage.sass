@@ -1,0 +1,29 @@
+.p-usage
+  margin-bottom: 50px
+  a
+    color: #a9a9a9
+  &__item
+    border-bottom: dotted 1px #676767
+    padding:
+      bottom: 30px
+    margin-bottom: 15px
+    @include flex
+    @include flexItemsLeft
+
+  &__list
+    & .p-usage__item:last-child
+      border-bottom: none
+      margin-bottom: 0
+
+  &__image
+    width: 135px
+    &Title
+      color: #000
+      font-size: 18px
+      margin-bottom: 10px
+
+@include media($breakpoint)
+  .p-usage
+    margin-bottom: 0
+    &__item
+      padding-bottom: 15px

@@ -1,0 +1,34 @@
+.c-item
+	padding-left: 18px + 5px
+	font-size: 12px
+	display: flex
+	align-items: center
+	background-color: white
+	&--view
+		padding-left: 18px
+		background: url(#{$imgPath}icon_view.gif) no-repeat 0 50%
+		font-size: 14px
+	&--job
+		background: url(#{$imgPath}icon_job.gif) no-repeat 0 50%
+		white-space: nowrap
+		text-overflow: ellipsis
+		overflow: hidden
+	&--area
+		background: url(#{$imgPath}icon_area.gif) no-repeat 0 50%
+		white-space: nowrap
+		text-overflow: ellipsis
+		overflow: hidden
+	&--fee
+		background: url(#{$imgPath}icon_fee.gif) no-repeat 0 50%
+		white-space: nowrap
+		text-overflow: ellipsis
+		overflow: hidden
+	&--jobNum
+		padding-left: 0
+		font-size: 14px
+		&:before
+			// "\00a0"は表示する時spaceになる
+			content: "求人数\00a0"
+	&--date
+		padding-left: 0
+		font-size: 14px

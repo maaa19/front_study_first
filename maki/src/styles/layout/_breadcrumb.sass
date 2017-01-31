@@ -1,0 +1,15 @@
+.l-breadcrumb
+	font-size: 16px
+	color: #676767
+	@include flex
+	a
+		color: #a9a9a9
+	&__item + &__item::before
+		content: "\00a0>\00a0"
+
+.arrowRight
+	padding: 0 5px
+
+@include media($breakpoint)
+	.l-breadcrumb
+		margin-bottom: 30px

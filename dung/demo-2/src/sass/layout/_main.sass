@@ -1,0 +1,23 @@
+/*
+	name*/
+
+
+@import "../foundation/constant"
+
+a
+	@each $prefix in $prefix-list 
+		#{$prefix}transition: all 0.3 linear
+
+@include media(tablet)
+	body
+		background-color: $tablet-theme-color
+
+@include media(desktop)
+	body
+		background-color: $theme-color
+.name
+	width: 100px
+	border: 1px dotted black
+	@include prefix("border-radius", 50%)
+	@include prefix("box-sizing", "border-box")
+

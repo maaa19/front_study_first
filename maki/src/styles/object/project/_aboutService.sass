@@ -1,0 +1,27 @@
+.p-aboutService
+	text-align: center
+	margin-bottom: 50px
+	@include flex
+	@include flexWrap
+	&__item
+		@include flexItem--4
+		padding:
+			right: 20px
+
+	&__desc
+		text-align: left
+
+@include media($breakpoint)
+	.p-aboutService
+		margin-bottom: 0
+		&__item
+			@include flexItem--12
+			@include flex
+			@include flexItemsLeft
+			@include flexItemsMiddle
+			padding:
+				right: 0
+				bottom: 30px
+		&__img
+			width: 80px
+			margin-right: 10px

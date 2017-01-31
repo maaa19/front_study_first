@@ -1,0 +1,21 @@
+.c-icon {
+  display: block;
+  padding: 2px 0 1px 20px; }
+
+.c-icon--job {
+  background-image: url(../../../../images/icon_job.gif);
+  background-repeat: no-repeat; }
+
+.c-icon--area {
+  background-image: url(../../../../images/icon_area.gif);
+  background-repeat: no-repeat; }
+
+.c-icon--fee {
+  background-image: url(../../../../images/icon_fee.gif);
+  background-repeat: no-repeat; }
+
+.c-icon--view {
+  background-image: url(../../../../images/icon_view.gif);
+  background-repeat: no-repeat; }
+
+/*# sourceMappingURL=icon.css.map */

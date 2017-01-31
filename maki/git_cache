@@ -1,0 +1,7 @@
+git rm --cache .sass-cache/6c09d5a4fcec8aa287c32b071e5a75658d763516/panel.sassc
+git rm --cache .sass-cache/cf717c92efe1608315276989c00ed65f2a59c50e/jumbotron.sassc
+git rm --cache .sass-cache/fd34fbcc7e46cdfec60365552e9ee1e7e447145d/header.sassc
+
+
+git rm --cache .sass-cache/6c09d5a4fcec8aa287c32b071e5a75658d763516/button.sassc
+git rm --cache .sass-cache/6c09d5a4fcec8aa287c32b071e5a75658d763516/slide.sassc

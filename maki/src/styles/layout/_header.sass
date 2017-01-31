@@ -1,0 +1,81 @@
+@import "../object/component/gutter"
+@import "../object/component/button"
+
+.l-header
+  color: #fff
+  font-size: 16px
+  background-color: $themeColor
+  a
+    color: #fff
+    &:hover
+      opacity: 0.8
+  &--wide
+    padding: 20px
+    max-width: 980px
+    margin: 0 auto
+    @include flex
+    @include flexItemsBetween
+    @include flexItemsMiddle
+  &--narrow
+    padding: 10px
+    display: none
+    &__logo
+      padding: 0
+      @include flexItem--6
+    &__menu
+      padding: 0
+      @include flexItem--6
+      @include flex
+      @include flexWrap
+      @include flexItemsRight
+      @include flexItemsMiddle
+      &Button
+        @include resetBtn
+        padding: 0
+        padding-left: 10px
+        color: white
+        font-size: 120%
+      &Icon
+        font-size: 120%
+        vertical-align: middle
+      &Content
+        vertical-align: middle
+        font-size: 80%
+    &__searchIcon
+      font-size: 120%
+    &__logoImg
+      max-width: 180px
+      width: 100%
+  &--transparent
+    font-size: 18px
+    background-color: transparent
+    left: 0
+    right: 0
+    position: absolute
+    z-index: 1
+  &__menu
+    width: 500px
+    min-width: 500px
+    &List
+      @include flex
+      @include flexWrap
+      @include flexItemsRight
+      @include flexItemsMiddle
+    &Item
+      @include gutter(row, 5px)
+    &LastItem
+      padding-right: 0 !important
+    &Separater
+      @include gutter(row, 10px)
+      cursor: default
+  &__logoImg
+    width: 180px
+
+@media (max-width: $breakpoint)
+  .l-header
+    &--wide
+      display: none
+    &--narrow
+      @include flex
+      @include flexWrap
+      @include flexItemsMiddle

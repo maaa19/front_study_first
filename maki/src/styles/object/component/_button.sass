@@ -1,0 +1,69 @@
+@mixin resetBtn
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+  box-shadow: none
+  display: block
+  border: none
+  background-color: transparent
+  cursor: pointer
+  outline: none
+  -webkit-appearance: none
+  -moz-appearance: none
+  appearance: none
+  margin: 0
+
+.c-btn
+  @include resetBtn
+  border: solid 1px #eee
+  font-size: 14px
+  text-align: center
+  padding: 10px
+
+  &--primary
+    color: white
+    background-color: $themeColor
+    width: 50%
+    margin: 0 auto
+    &:hover
+      background-color: darken($themeColor, 20%)
+
+
+
+  // &--white
+  //   background-color: white
+  //   &:hover
+  //     color: $themeColor
+  //     border: solid 1px $themeColor
+  // &--blue
+  //   color: white
+  //   background-color: #83ccd2
+  //   &:hover
+  //     background-color: darken($themeColor, 20%)
+  // &--half
+  //   width: 50%
+  // &--center
+  //   margin: 0 auto
+
+  &--favorite
+    border: none
+    color: grey
+    padding-left: 18px
+    background: url(#{$imgPath}icon_plus.gif) no-repeat 0 center #fff
+    &:hover
+      color: $themeColor
+
+  &--more
+    color: #676767
+    width: 40%
+    margin-top: 20px
+    display: inline-block
+    background: url(../images/icon_left.gif) no-repeat 95% center #fff
+    &:hover
+      color: $themeColor
+      border: solid 1px $themeColor
+
+@media (max-width: $breakpoint)
+  .c-btn
+    &--xs--long
+      width: 80%
